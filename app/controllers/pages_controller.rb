@@ -18,5 +18,11 @@ class PagesController < ApplicationController
   end
 
   def person
+    p_name = params[:name]
+    p_age = params[:age]
+    p1 = Person.new params[:name], params[:age]
+    p_birth_year = p1.birth_year
+    p_nickname = p1.nickname
+    @text3 = "Your name is #{p_name}. Your age is #{p_age}. Your birth year is #{p_birth_year}. Your nickname is #{p_nickname}"
   end
 end
