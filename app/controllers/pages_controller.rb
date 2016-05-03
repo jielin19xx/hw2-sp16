@@ -25,4 +25,11 @@ class PagesController < ApplicationController
     p_nickname = p1.nickname
     @text3 = "Your name is #{p_name}. Your age is #{p_age}. Your birth year is #{p_birth_year}. Your nickname is #{p_nickname}"
   end
+  
+  def me
+    @myname = "Jie Lin"
+    @funfact = "I love playing drones!"
+    
+  end
+  
 end
